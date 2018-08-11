@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CourtCounter</string>
+    <string name="Rteam">red team</string>
+    <string name="Bteam">blue team</string>
+    <string name="DT">Deaths</string>
+    <string name="FR">Frags</string>
+    <string name="RT">Ratio</string>
+    <string name="init_zero">0</string>
+    <string name="FG_button">FRAG</string>
+    <string name="DT_button">DEATH</string>
+    <string name="Reset">Reset</string>
+</resources>

@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1
+"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/teamname"
+                android:text="@string/Bteam"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/FR"/>
+
+            <TextView
+                android:id="@+id/team_blue_frags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/DT"/>
+
+            <TextView
+                android:id="@+id/team_blue_deaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/RT"/>
+
+            <TextView
+                android:id="@+id/team_blue_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero" />
+
+            <Button
+                android:id="@+id/addFragForBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:onClick="addFragForBlue"
+                android:text="@string/FG_button" />
+
+            <Button
+                android:id="@+id/addDeathForBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="addDeathForBlue"
+                android:text="@string/DT_button" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/teamname"
+                android:text="@string/Rteam" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/FR"/>
+
+            <TextView
+                android:id="@+id/team_red_frags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/DT"/>
+
+            <TextView
+                android:id="@+id/team_red_deaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/statname"
+                android:text="@string/RT"/>
+
+            <TextView
+                android:id="@+id/team_red_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/score"
+                android:text="@string/init_zero" />
+
+
+            <Button
+                android:id="@+id/addFragForRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:onClick="addFragForRed"
+                android:text="@string/FG_button" />
+
+            <Button
+                android:id="@+id/addDeathForRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:onClick="addDeathForRed"
+                android:text="@string/DT_button" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/reset_button"
+        android:layout_width="128dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:onClick="resetForAll"
+        android:text="@string/Reset" />
+
+</LinearLayout>
